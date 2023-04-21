@@ -1,12 +1,13 @@
 const hamburger = document.querySelector(".hamburger"); 
-const menu = document.querySelector(".nav-opt"); 
+const menu = document.querySelector(".sidebar"); 
 hamburger.addEventListener("click", function () 
-{ this.classList.toggle("active");
- menu.classList.toggle("active");
+{ 
+   
+ menu.classList.toggle("hidden");
  }); 
 window.addEventListener("resize", function () { 
     if (window.innerWidth > 970) { 
-        hamburger.classList.remove("active");
-         menu.classList.remove("active");
+        hamburger.classList.add("hidden");
+         menu.classList.add("hidden");
          } 
         });
